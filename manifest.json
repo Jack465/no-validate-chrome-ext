@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "no-validate",
+    "version": "1.0",
+    "description": "Add novalidate attribute to every form tag on the page, useful for marking.",
+    "content_scripts": [
+        {
+            "js": ["scripts/content.js"],
+            "matches": [
+                "https://some_url_here.com/*"
+            ]
+        }
+    ]
+}
